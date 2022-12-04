@@ -1,0 +1,361 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body{
+    overflow-x:hidden;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1)10%,rgb(0,0,0,0.1)10%), url(../images/bgnew3.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #2e3192;
+    position: relative;
+}
+
+.content h1{
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    margin-top: 2%;
+}
+
+.content .logo{
+    margin-top: 10%;
+    margin-left: 13%;
+    transition: width 2s, height 2s, transform 2s ease-in-out;
+    animation-name: lankabell;
+    animation-duration: 4s;
+}
+
+@keyframes lankabell {
+    from { width: 160px; height: 76.5px;}
+to {width: 320px;height: 153px;}
+}
+
+.content .pack{
+    margin-top: -80px;
+    margin-left: 2.5%;
+    width: 600px;
+    height: 133.33px;
+}
+
+.content span{
+    color: #ed1b24;
+    font-size: 60px;
+}
+
+.form{
+    width: 250px;
+    height: 450px;
+    background: linear-gradient(to top, rgb(12, 32, 54)100%,rgb(12,32,54)100%); 
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    left: 820px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #a1a1a1;
+    font-family: Arial;
+}
+
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #e0e0e0;
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #0c2036;
+    border: 2px solid #ffffff;
+    transition: 0.4s ease;
+}
+
+.btn:hover{
+    background: #ffffff;
+    color: #0c2036;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #0c2036;
+    font-weight: bold;
+}
+
+.form .lin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.form .lin a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.form .lin a:hover{
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.form .minf{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.form .minf a{
+    font-weight: 600px;
+    color: #ffffff;
+}
+
+.form .fce{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.form .fce a{
+    text-decoration: none;
+    padding-right: 10px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.bell{
+    width: 245px;
+    height: 76px;
+}
+
+.mob{
+    visibility: hidden;
+}
+
+.mob2{
+    visibility: visible;
+}
+
+@media only screen and (max-width: 900px){
+
+    .main{
+        width: 100%;
+        background: linear-gradient(to top, rgb(0,0,0,0.1)50%,rgb(0,0,0,0.1)50%), url(../images/bgnew3.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1080px;
+    }
+
+    .form{
+        width: 250px;
+        height: 450px;
+        background: linear-gradient(to top, rgb(12,32,54,0.8)80%,rgb(12,32,54,0.8)80%); 
+        border-radius: 20px;
+        position: absolute;
+        top: 115%;
+        left: 250px;
+        padding: 25px;
+    }
+
+    .content{
+        height: auto;
+        margin: auto;
+        color: #2e3192;
+        position: relative;
+    }
+
+    .content .logo{
+        margin-top: 1%;
+        margin-left: 22%;
+        transition: width 2s, height 2s, transform 2s ease-in-out;
+        animation-name: lankabell;
+        animation-duration: 4s;
+    }
+
+    .content h1{
+        font-family: Arial;
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 110px;
+        letter-spacing: 2px;
+        margin-top: 3%;
+    }
+
+    .content span{
+        color: #ed1b24;
+        font-size: 60px;
+    }
+
+    .content .pack{
+        margin-top:- 3%;
+        margin-left: 10.5%;
+        width: 600px;
+        height: 133.33px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .main{
+        width: 100%;
+        height: 818px;
+        background: linear-gradient(to top, rgb(0,0,0,0.1)50%,rgb(0,0,0,0.1)50%), url(../images/bgnew3.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .content{
+        height: auto;
+        margin: auto;
+        color: #2e3192;
+        position: relative;
+    }
+
+    .content .logo{
+        margin-top: 1%;
+        margin-left: 2%;
+        transition: width 2s, height 2s, transform 2s ease-in-out;
+        animation-name: lankabell;
+        animation-duration: 4s;
+    }
+
+    .content h1{
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: bold;
+        padding-left: 20px;
+        letter-spacing: 2px;
+        margin-top: 1%;
+    }
+
+    .content span{
+        color: #ed1b24;
+        font-size: 30px;
+    }
+
+    .content .pack{
+        margin-top: 2%;
+        margin-left: 2.5%;
+        width: 300px;
+        height: 66.66px;
+    }
+
+    .form{
+        width: 250px;
+        height: 425px;
+        background: linear-gradient(to top, rgb(12,32,54,0.8)80%,rgb(12,32,54,0.8)80%); 
+        border-radius: 20px;
+        position: absolute;
+        top: 105%;
+        left: 38px;
+        padding: 25px;
+    }
+
+    .form h2{
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: #ffffff;
+        font-size: 22px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 8px;
+    }
+
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #ffffff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: #ffffff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        font-family: sans-serif;
+    }
+
+    .bell{
+        margin-left: -10px;
+        width: 122.5px;
+        height: 38px;
+    }
+
+    .mob{
+        visibility: visible;
+    }
+
+    .mob2{
+        visibility: hidden;
+    }
+
+
+}
+
+.lb-copyright{
+    position: absolute; 
+    bottom: 0; width: 100%; 
+    text-align:center; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
